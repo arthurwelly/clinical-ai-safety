@@ -1,2 +1,2 @@
 # Clinical AI Safety: Auditing LLM Alignment in Psychological Distress Scenarios
-Auditing LLM safety, sycophancy, and alignment limits when interacting with users in psychological distress. Clinical insights, benchmarks, and mitigation strategies.
+As conversational AIs are increasingly used by the general public as confidants, evaluating their behavioral and safety boundaries is critical. This repository documents red teaming audits of commercial LLMs interacting with simulated users experiencing acute psychological distress (such as PTSD). By analyzing issues like clinical sycophancy, this project aims to propose concrete, clinical-backed mitigation strategies to build safer conversational systems.
