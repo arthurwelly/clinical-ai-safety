@@ -11,14 +11,14 @@ This dual perspective allows me to look at AI safety through a human lens. Inste
 
 ## 📂 Active Safety Audits
 
-| Case Study | Tested Models |
-| :--- | :--- |
-| 🛡️ **[01: AI "People-Pleasing" & PTSD Avoidance](./01-clinical-sycophancy)** | Mistral, ChatGPT, Claude, Gemini |
+| Case Study | Tested Models | Key Finding | Status |
+| :--- | :--- | :--- | :---: |
+| [01: AI Sycophancy & PTSD Avoidance](./01-clinical-sycophancy) | Mistral, ChatGPT, Claude, Gemini | 1 critical failure (iatrogenic validation) | Completed |
 
 ---
 
 ## 🛠️ Methodology
 
-* **Testing Beyond English:** I run my audits in French (with English translations). AI safety filters are often much weaker in languages other than English.
+* **Testing Beyond English:** I run my audits in French (with English translations). AI safety filters are often weaker in languages other than English.
 * **Real-World Scenarios:** I don't use abstract tests. I design realistic prompts based on my daily clinical experience, to see how an AI truly handles real human struggles.
 * **Building Solutions:** The goal is to highlight these hidden gaps and offer practical fixes to help developers build safer conversational tools.
