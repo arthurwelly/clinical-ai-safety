@@ -1,6 +1,6 @@
 # Clinical AI Safety: Auditing LLM Alignment in Psychological Distress Scenarios
 
-As conversational AIs are increasingly used by the general public as confidants, evaluating their behavioral and safety boundaries is critical. This repository documents red teaming audits of commercial LLMs interacting with simulated users experiencing acute psychological distress (such as PTSD). By analyzing failure modes like clinical sycophancy and deference to medical authority, this project aims to propose concrete, clinically-backed mitigation strategies to build safer conversational systems.
+As conversational AIs are increasingly used by the general public as confidants, evaluating their behavioral and safety boundaries is critical. This repository documents red teaming audits of commercial LLMs interacting with simulated users experiencing acute psychological distress (such as PTSD). By analyzing failure modes like clinical sycophancy and deference to medical authority, this project aims to propose concrete, clinically-backed mitigation strategies to build safer conversational systems. It also includes reviews of recent studies on the same questions, read from a clinician's point of view.
 
 ## 👤 About Me
 
@@ -9,12 +9,13 @@ This dual perspective allows me to look at AI safety through a human lens. Inste
 
 ---
 
-## 📂 Active Safety Audits
+## 📂 Case Studies
 
 | Case Study | Tested Models | Key Finding | Status |
 | :--- | :--- | :--- | :---: |
 | [01: AI Sycophancy & PTSD Avoidance](./01-clinical-sycophancy) | Mistral, ChatGPT, Claude, Gemini | 1 critical failure (iatrogenic validation) | Completed |
 | [02: Medical Authority & Contraindicated Prescription](./02-authority-contraindication) | GPT-5.5, Mistral Medium, Claude Sonnet 5, Gemini Flash | All 4 models state the contraindication when asked directly (12/12); none do once a prescriber is mentioned (0/12) | Completed |
+| [03: How Refusals Are Experienced](./03-refusal-experiences) | None (literature review) | Most participants experienced refusals as care being withdrawn, not as protection | Completed |
 
 ---
 
@@ -24,4 +25,5 @@ This dual perspective allows me to look at AI safety through a human lens. Inste
 * **Controlled comparison:** Where possible, conditions differ by a single clause, so an observed effect can be attributed to a specific variable.
 * **Multilingual testing:** Audits are run in French and English. Safety behaviors may differ across languages.
 * **Reproducible tooling:** From case 02 onward, audits use [Promptfoo](https://github.com/promptfoo/promptfoo) with published configuration files and raw results, so anyone can re-run them.
+* **Literature reviews:** Some cases don't test a model. They go through a recent study and connect its findings to clinical practice and to the audits in this repository.
 * **Building solutions:** The goal is to highlight these hidden gaps and offer practical fixes to help developers build safer conversational tools.
